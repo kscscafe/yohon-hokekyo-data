@@ -10,7 +10,7 @@ Each character is paired with its pronunciation reading (呉音 *goon*), the tra
 
 | File | Chapter (Japanese) | Chapter (English) | Characters |
 |------|--------------------|-------------------|-----------|
-| `01_johon.json` | 序品 | Johon (Chapter 1) | 654 |
+| `01_johon.json` | 序品 | Jobon (Chapter 1) | 654 |
 | `02_hobenbon.json` | 方便品 | Hobenpon (Chapter 2) | 294 |
 | `03_yokuryoshu.json` | 欲令衆 | Yokuryoshu (Chapter 3 excerpt) | 255 |
 | `04_daibadattahon.json` | 提婆達多品 | Daibadattahon (Chapter 12) | 1,736 |
@@ -36,16 +36,16 @@ Each JSON file follows this structure:
   "name_en": "Juryohon (Chapter 16)",
   "note": "...",
   "text": [
-    ["妙", "みょう"],
-    ["法", "ほう"],
-    ["蓮", "れん"],
-    ["華", "げー"],
-    ["経", "きょう"]
+    ["妙", "みょう", "myou"],
+    ["法", "ほう", "hou"],
+    ["蓮", "れん", "ren"],
+    ["華", "げー", "gee"],
+    ["経", "きょう", "kyou"]
   ]
 }
 ```
 
-`text` is an array of `[kanji, ruby]` pairs. The ruby represents the *goon* (呉音) pronunciation used in Nichiren sect recitation, which differs from standard modern Japanese readings.
+`text` is an array of `[kanji, ruby, romaji]` triplets. The ruby represents the *goon* (呉音) pronunciation used in Nichiren sect recitation, which differs from standard modern Japanese readings. Romaji is generated automatically via [pykakasi](https://github.com/miurahr/pykakasi) (Hepburn) and may not perfectly reflect the chanting pronunciation.
 
 ---
 
@@ -95,7 +95,7 @@ This data was extracted from source files used in a Nichiren sect temple applica
 
 This data is released under the **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** license.
 
-The sutra text itself is in the public domain. The structured ruby annotations and dataset format are © Koryu Sugizaki.
+The sutra text itself is in the public domain. The structured ruby annotations and dataset format are © OFFICE ES LLC.
 
 [![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 
@@ -105,6 +105,6 @@ The sutra text itself is in the public domain. The structured ruby annotations a
 
 If you use this dataset, please credit:
 
-> yohon-hokekyo-data by Koryu Sugizaki  
+> yohon-hokekyo-data by OFFICE ES LLC  
 > https://github.com/kscscafe/yohon-hokekyo-data  
 > Licensed under CC BY-SA 4.0

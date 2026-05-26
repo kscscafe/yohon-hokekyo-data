@@ -10,7 +10,7 @@ Each character is paired with its pronunciation reading (呉音 *goon*), the tra
 
 | File | Chapter (Japanese) | Chapter (English) | Characters |
 |------|--------------------|-------------------|-----------|
-| `01_johon.json` | 序品 | Jobon (Chapter 1) | 654 |
+| `01_johon.json` | 序品 | Johon (Chapter 1) | 654 |
 | `02_hobenbon.json` | 方便品 | Hobenpon (Chapter 2) | 294 |
 | `03_yokuryoshu.json` | 欲令衆 | Yokuryoshu (Chapter 3 excerpt) | 255 |
 | `04_daibadattahon.json` | 提婆達多品 | Daibadattahon (Chapter 12) | 1,736 |

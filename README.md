@@ -10,7 +10,7 @@ Each character is paired with its pronunciation reading (呉音 *goon*), the tra
 
 | File | Chapter (Japanese) | Chapter (English) | Characters |
 |------|--------------------|-------------------|-----------|
-| `01_johon.json` | 序品 | Jobon (Chapter 1) | 654 |
+| `01_johon.json` | 序品 | Johon (Chapter 1) | 654 |
 | `02_hobenbon.json` | 方便品 | Hobenpon (Chapter 2) | 294 |
 | `03_yokuryoshu.json` | 欲令衆 | Yokuryoshu (Chapter 3 excerpt) | 255 |
 | `04_daibadattahon.json` | 提婆達多品 | Daibadattahon (Chapter 12) | 1,736 |
@@ -95,7 +95,7 @@ This data was extracted from source files used in a Nichiren sect temple applica
 
 This data is released under the **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** license.
 
-The sutra text itself is in the public domain. The structured ruby annotations and dataset format are © OFFICE ES LLC.
+The sutra text itself is in the public domain. The structured ruby annotations and dataset format are © Koryu Sugizaki.
 
 [![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 
@@ -105,6 +105,6 @@ The sutra text itself is in the public domain. The structured ruby annotations a
 
 If you use this dataset, please credit:
 
-> yohon-hokekyo-data by OFFICE ES LLC  
+> yohon-hokekyo-data by Koryu Sugizaki  
 > https://github.com/kscscafe/yohon-hokekyo-data  
 > Licensed under CC BY-SA 4.0

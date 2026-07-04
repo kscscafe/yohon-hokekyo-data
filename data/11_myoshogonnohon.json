@@ -8658,5 +8658,12 @@
       "じょう",
       "jou"
     ]
-  ]
+  ],
+  "source": {
+    "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+    "copyright": "© Koryu Sugizaki",
+    "license": "CC BY-NC-SA 4.0",
+    "version": "v1.1.2",
+    "checksum": "37eaf8d22d8cac7b"
+  }
 }

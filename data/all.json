@@ -3569,7 +3569,14 @@
         "めん",
         "men"
       ]
-    ]
+    ],
+    "source": {
+      "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+      "copyright": "© Koryu Sugizaki",
+      "license": "CC BY-NC-SA 4.0",
+      "version": "v1.1.2",
+      "checksum": "47fdd5563d5e96e9"
+    }
   },
   {
     "name": "方便品",
@@ -5086,7 +5093,14 @@
         "とう",
         "tou"
       ]
-    ]
+    ],
+    "source": {
+      "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+      "copyright": "© Koryu Sugizaki",
+      "license": "CC BY-NC-SA 4.0",
+      "version": "v1.1.2",
+      "checksum": "7755ee1548dd225a"
+    }
   },
   {
     "name": "欲令衆",
@@ -6423,7 +6437,14 @@
         "じつ",
         "jitsu"
       ]
-    ]
+    ],
+    "source": {
+      "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+      "copyright": "© Koryu Sugizaki",
+      "license": "CC BY-NC-SA 4.0",
+      "version": "v1.1.2",
+      "checksum": "7537a00d87c927dd"
+    }
   },
   {
     "name": "提婆達多品",
@@ -15195,7 +15216,14 @@
         "じゅー",
         "juu"
       ]
-    ]
+    ],
+    "source": {
+      "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+      "copyright": "© Koryu Sugizaki",
+      "license": "CC BY-NC-SA 4.0",
+      "version": "v1.1.2",
+      "checksum": "c5a6d1eb5e2ce3a0"
+    }
   },
   {
     "name": "勧持品",
@@ -17257,7 +17285,14 @@
         "しん",
         "shin"
       ]
-    ]
+    ],
+    "source": {
+      "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+      "copyright": "© Koryu Sugizaki",
+      "license": "CC BY-NC-SA 4.0",
+      "version": "v1.1.2",
+      "checksum": "b3ba6668801c62ad"
+    }
   },
   {
     "name": "寿量品",
@@ -27424,7 +27459,14 @@
         "しん",
         "shin"
       ]
-    ]
+    ],
+    "source": {
+      "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+      "copyright": "© Koryu Sugizaki",
+      "license": "CC BY-NC-SA 4.0",
+      "version": "v1.1.2",
+      "checksum": "b56d658983ed7ddf"
+    }
   },
   {
     "name": "神力品",
@@ -33121,7 +33163,14 @@
         "ぎー",
         "gii"
       ]
-    ]
+    ],
+    "source": {
+      "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+      "copyright": "© Koryu Sugizaki",
+      "license": "CC BY-NC-SA 4.0",
+      "version": "v1.1.2",
+      "checksum": "0bc929af1bd6473f"
+    }
   },
   {
     "name": "属累品",
@@ -35503,7 +35552,14 @@
         "ぎー",
         "gii"
       ]
-    ]
+    ],
+    "source": {
+      "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+      "copyright": "© Koryu Sugizaki",
+      "license": "CC BY-NC-SA 4.0",
+      "version": "v1.1.2",
+      "checksum": "40812e1231638107"
+    }
   },
   {
     "name": "普門品",
@@ -45905,7 +45961,14 @@
         "しん",
         "shin"
       ]
-    ]
+    ],
+    "source": {
+      "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+      "copyright": "© Koryu Sugizaki",
+      "license": "CC BY-NC-SA 4.0",
+      "version": "v1.1.2",
+      "checksum": "e5302cd6d90cd864"
+    }
   },
   {
     "name": "陀羅尼品",
@@ -52112,7 +52175,14 @@
         "にん",
         "nin"
       ]
-    ]
+    ],
+    "source": {
+      "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+      "copyright": "© Koryu Sugizaki",
+      "license": "CC BY-NC-SA 4.0",
+      "version": "v1.1.2",
+      "checksum": "e48691ca3b38d5e3"
+    }
   },
   {
     "name": "妙荘厳王品",
@@ -60774,7 +60844,14 @@
         "じょう",
         "jou"
       ]
-    ]
+    ],
+    "source": {
+      "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+      "copyright": "© Koryu Sugizaki",
+      "license": "CC BY-NC-SA 4.0",
+      "version": "v1.1.2",
+      "checksum": "37eaf8d22d8cac7b"
+    }
   },
   {
     "name": "普賢品",
@@ -69341,6 +69418,13 @@
         "はち",
         "hachi"
       ]
-    ]
+    ],
+    "source": {
+      "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+      "copyright": "© Koryu Sugizaki",
+      "license": "CC BY-NC-SA 4.0",
+      "version": "v1.1.2",
+      "checksum": "a0d3922ef0944735"
+    }
   }
 ]

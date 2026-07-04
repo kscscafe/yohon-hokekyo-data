@@ -10398,5 +10398,12 @@
       "しん",
       "shin"
     ]
-  ]
+  ],
+  "source": {
+    "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+    "copyright": "© Koryu Sugizaki",
+    "license": "CC BY-NC-SA 4.0",
+    "version": "v1.1.2",
+    "checksum": "e5302cd6d90cd864"
+  }
 }

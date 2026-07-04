@@ -1,5 +1,10 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+- Add a `source` metadata field to each chapter JSON (repo, copyright, license, version, and a content checksum) for provenance tracking
+
 ## [1.1.2] - 2026-07-05
 
 ### Changed

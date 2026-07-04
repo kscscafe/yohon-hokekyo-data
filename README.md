@@ -35,6 +35,13 @@ Each JSON file follows this structure:
   "name": "寿量品",
   "name_en": "Juryohon (Chapter 16)",
   "note": "...",
+  "source": {
+    "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+    "copyright": "© Koryu Sugizaki",
+    "license": "CC BY-NC-SA 4.0",
+    "version": "v1.1.2",
+    "checksum": "b56d658983ed7ddf"
+  },
   "text": [
     ["妙", "みょう", "myou"],
     ["法", "ほう", "hou"],
@@ -46,6 +53,8 @@ Each JSON file follows this structure:
 ```
 
 `text` is an array of `[kanji, ruby, romaji]` triplets. The ruby represents the *goon* (呉音) pronunciation used in Nichiren sect recitation, which differs from standard modern Japanese readings. Romaji is generated automatically via [pykakasi](https://github.com/miurahr/pykakasi) (Hepburn) and may not perfectly reflect the chanting pronunciation.
+
+`source` records provenance and a checksum (SHA-256, truncated) computed over that chapter's `text` array — it changes if and only if the kanji/ruby/romaji content changes, independent of formatting or metadata edits. Useful for verifying you have an unmodified copy of a given version.
 
 ---
 

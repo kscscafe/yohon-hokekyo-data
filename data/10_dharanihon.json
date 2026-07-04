@@ -6203,5 +6203,12 @@
       "にん",
       "nin"
     ]
-  ]
+  ],
+  "source": {
+    "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+    "copyright": "© Koryu Sugizaki",
+    "license": "CC BY-NC-SA 4.0",
+    "version": "v1.1.2",
+    "checksum": "e48691ca3b38d5e3"
+  }
 }

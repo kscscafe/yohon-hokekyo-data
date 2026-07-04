@@ -3568,5 +3568,12 @@
       "めん",
       "men"
     ]
-  ]
+  ],
+  "source": {
+    "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
+    "copyright": "© Koryu Sugizaki",
+    "license": "CC BY-NC-SA 4.0",
+    "version": "v1.1.2",
+    "checksum": "47fdd5563d5e96e9"
+  }
 }

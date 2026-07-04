@@ -1,5 +1,10 @@
 # Changelog
 
+## [Unreleased]
+
+### Changed
+- **License changed from CC BY-SA 4.0 to CC BY-NC-SA 4.0** — commercial use now requires separate permission from the author. Versions up to and including v1.1.1 remain available under the original CC BY-SA 4.0 terms for copies already distributed under it.
+
 ## [1.1.1] - 2026-07-05
 
 ### Fixed

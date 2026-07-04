@@ -94,11 +94,13 @@ This data was extracted from source files used in a Nichiren sect temple applica
 
 ## License
 
-This data is released under the **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** license.
+This data is released under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)** license. Commercial use is not permitted without separate permission from the author.
 
 The sutra text itself is in the public domain. The structured ruby annotations and dataset format are © Koryu Sugizaki.
 
-[![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+> **Note:** Versions up to and including v1.1.1 were released under CC BY-SA 4.0, which permitted commercial use. That license is not retroactively revoked for copies already distributed under it; this NC restriction applies to v1.1.2 and later.
 
 ---
 
@@ -108,4 +110,4 @@ If you use this dataset, please credit:
 
 > yohon-hokekyo-data by Koryu Sugizaki  
 > https://github.com/kscscafe/yohon-hokekyo-data  
-> Licensed under CC BY-SA 4.0
+> Licensed under CC BY-NC-SA 4.0

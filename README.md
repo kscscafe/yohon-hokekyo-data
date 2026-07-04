@@ -10,19 +10,19 @@ Each character is paired with its pronunciation reading (呉音 *goon*), the tra
 
 | File | Chapter (Japanese) | Chapter (English) | Characters |
 |------|--------------------|-------------------|-----------|
-| `01_johon.json` | 序品 | Johon (Chapter 1) | 654 |
-| `02_hobenbon.json` | 方便品 | Hobenpon (Chapter 2) | 294 |
-| `03_yokuryoshu.json` | 欲令衆 | Yokuryoshu (Chapter 3 excerpt) | 255 |
-| `04_daibadattahon.json` | 提婆達多品 | Daibadattahon (Chapter 12) | 1,736 |
-| `05_kanjihon.json` | 勧持品 | Kanjihon (Chapter 13) | 409 |
-| `06_juryohon.json` | 寿量品 | Juryohon (Chapter 16) | 2,027 |
-| `07_jinrikihon.json` | 神力品 | Jinrikihon (Chapter 21) | 1,097 |
-| `08_zokuruihon.json` | 属累品 | Zokuruihon (Chapter 22) | 468 |
-| `09_fumonpon.json` | 普門品 | Fumonpon (Chapter 25) | 2,046 |
-| `10_dharanihon.json` | 陀羅尼品 | Dharanihon (Chapter 26) | 1,208 |
-| `11_myoshogonnohon.json` | 妙荘厳王品 | Myoshogonnohon (Chapter 27) | 1,704 |
-| `12_fugenpon.json` | 普賢品 | Fugenpon (Chapter 28) | 1,652 |
-| `all.json` | 全品 | All chapters combined | 13,550 |
+| `01_johon.json` | 序品 | Johon (Chapter 1) | 713 |
+| `02_hobenbon.json` | 方便品 | Hobenpon (Chapter 2) | 302 |
+| `03_yokuryoshu.json` | 欲令衆 | Yokuryoshu (Chapter 3 excerpt) | 266 |
+| `04_daibadattahon.json` | 提婆達多品 | Daibadattahon (Chapter 12) | 1,753 |
+| `05_kanjihon.json` | 勧持品 | Kanjihon (Chapter 13) | 411 |
+| `06_juryohon.json` | 寿量品 | Juryohon (Chapter 16) | 2,032 |
+| `07_jinrikihon.json` | 神力品 | Jinrikihon (Chapter 21) | 1,138 |
+| `08_zokuruihon.json` | 属累品 | Zokuruihon (Chapter 22) | 475 |
+| `09_fumonpon.json` | 普門品 | Fumonpon (Chapter 25) | 2,079 |
+| `10_dharanihon.json` | 陀羅尼品 | Dharanihon (Chapter 26) | 1,240 |
+| `11_myoshogonnohon.json` | 妙荘厳王品 | Myoshogonnohon (Chapter 27) | 1,731 |
+| `12_fugenpon.json` | 普賢品 | Fugenpon (Chapter 28) | 1,712 |
+| `all.json` | 全品 | All chapters combined | 13,852 |
 
 ---
 
@@ -55,6 +55,7 @@ This dataset includes **㝹** (U+3779), a rare CJK character used as a phonetic 
 
 - 序品: 阿㝹楼駄 (あ**ぬ**るだ)
 - 陀羅尼品: 那梨㝹那梨 (**とー**), 兜醯㝹醯 (**とー**)
+- 普賢品: 阿㝹伽地 (**とー**)
 
 Standard fonts may not display this character. See the Fonts section below.
 

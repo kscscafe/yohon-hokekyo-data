@@ -39,8 +39,8 @@ Each JSON file follows this structure:
     "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
     "copyright": "© Koryu Sugizaki",
     "license": "CC BY-NC-SA 4.0",
-    "version": "v1.1.4",
-    "checksum": "d94a0f58cd2b3f3e"
+    "version": "v1.1.5",
+    "checksum": "e2311122ac0c1a06"
   },
   "text": [
     ["妙", "みょう", "myō"],
@@ -58,7 +58,7 @@ Each JSON file follows this structure:
 
 Run `python3 scripts/normalize_romaji.py` to regenerate display romaji in the third item of each chapter JSON and `all.json`. The script also updates chapter checksums.
 
-Display romaji uses macrons for long vowels (`みょう` → `myō`, `ほう` → `hō`). A final small `ッ`/`っ` contributes the initial consonant of the following character: `こッ`/`しゅー` → `kos`/`shū`, `せッ`/`ぽう` → `sep`/`pō`. Before `sh` it contributes `s`; before `ch` or `ts` it contributes `t`. 普賢品 index 1014, `薩`, has the corrected kana `さつ` and romaji `satsu`.
+Display romaji uses macrons for long vowels (`みょう` → `myō`, `ほう` → `hō`). Yōon retains the `y` sound (`きょう` → `kyō`, `にょー` → `nyō`); `sh`, `ch`, and `j` follow Hepburn spellings. A final small `ッ`/`っ` contributes the initial consonant of the following character: `こッ`/`しゅー` → `kos`/`shū`, `せッ`/`ぽう` → `sep`/`pō`. Before `sh` it contributes `s`; before `ch` or `ts` it contributes `t`. 普賢品 index 1014, `薩`, has the corrected kana `さつ` and romaji `satsu`.
 
 `source` records provenance and a checksum (SHA-256, truncated) computed over that chapter's `text` array — it changes if and only if the kanji/ruby/romaji content changes, independent of formatting or metadata edits. Useful for verifying you have an unmodified copy of a given version.
 

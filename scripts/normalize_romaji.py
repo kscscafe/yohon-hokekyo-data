@@ -40,7 +40,7 @@ def romanize(kana):
         elif i + 1 < len(kana) and kana[i + 1] in "ゃゅょ":
             if char not in BASE or not BASE[char].endswith("i"):
                 raise ValueError(f"拗音を解釈できません: {kana}")
-            stem = YOON.get(char, BASE[char][:-1])
+            stem = YOON.get(char, BASE[char][:-1] + "y")
             pieces.append(stem + {"ゃ": "a", "ゅ": "u", "ょ": "o"}[kana[i + 1]])
             i += 1
         else:
@@ -100,7 +100,7 @@ def main():
             if not item[2]:
                 raise ValueError(f"Unresolved romaji: {chapter['name']} {index}")
         chapter["note"] = "Readings follow Nichiren sect goon (呉音) pronunciation. Display romaji uses macrons for long vowels and context-aware consonants for small tsu; corrections are welcome via GitHub Issues."
-        chapter["source"]["version"] = "v1.1.4"
+        chapter["source"]["version"] = "v1.1.5"
         chapter["source"]["checksum"] = hashlib.sha256(
             json.dumps(chapter["text"], ensure_ascii=False).encode("utf-8")
         ).hexdigest()[:16]

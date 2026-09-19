@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.1.5] - 2026-09-20
+
+### Fixed
+- Preserve the `y` sound in yōon display romaji (`みょう` → `myō`, `きょう` → `kyō`, `にょー` → `nyō`). Correct 1,107 affected entries across the 12 chapters; kana readings and character positions are unchanged.
+
 ## [1.1.4] - 2026-09-20
 
 ### Changed

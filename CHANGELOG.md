@@ -1,9 +1,11 @@
 # Changelog
 
-## Unreleased
+## [1.1.4] - 2026-09-20
 
-### Added
-- Add `data/romaji_display.json` with macrons and context-based small-tsu readings, plus a reproducible generator. Keep legacy `text` triplets unchanged for compatibility.
+### Changed
+- Correct 普賢品 index 1014 from `さッ` to `さつ` and normalize all 13,852 romaji readings in the third item of the original JSON files.
+- Use macrons for long vowels and the following consonant for small `ッ`/`っ`. Update chapter checksums and add a reproducible generator.
+- Remove the temporary parallel display-romaji dataset now that all readings are resolved.
 
 ## [1.1.3] - 2026-07-05
 

@@ -39,26 +39,26 @@ Each JSON file follows this structure:
     "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
     "copyright": "© Koryu Sugizaki",
     "license": "CC BY-NC-SA 4.0",
-    "version": "v1.1.3",
-    "checksum": "b56d658983ed7ddf"
+    "version": "v1.1.4",
+    "checksum": "d94a0f58cd2b3f3e"
   },
   "text": [
-    ["妙", "みょう", "myou"],
-    ["法", "ほう", "hou"],
+    ["妙", "みょう", "myō"],
+    ["法", "ほう", "hō"],
     ["蓮", "れん", "ren"],
-    ["華", "げー", "gee"],
-    ["経", "きょう", "kyou"]
+    ["華", "げー", "gē"],
+    ["経", "きょう", "kyō"]
   ]
 }
 ```
 
-`text` is an array of `[kanji, ruby, romaji]` triplets. The ruby represents the *goon* (呉音) pronunciation used in Nichiren sect recitation, which differs from standard modern Japanese readings. Romaji is generated automatically via [pykakasi](https://github.com/miurahr/pykakasi) (Hepburn) and may not perfectly reflect the chanting pronunciation.
+`text` is an array of `[kanji, ruby, romaji]` triplets. The ruby represents the *goon* (呉音) pronunciation used in Nichiren sect recitation, which differs from standard modern Japanese readings. The third item is display romaji, generated from the kana with the rules below.
 
 ### Display romaji
 
-`data/romaji_display.json` provides a reading-oriented romaji value for each character without changing the legacy `text` triplets. Match `chapters[].name` to a chapter in `all.json`, then use the same zero-based index in `chapters[].romaji` and `text`. Check `source_sha256` and each chapter's `source_checksum` before pairing the files. Run `python3 scripts/generate_romaji_display.py` to regenerate this file from `data/all.json`.
+Run `python3 scripts/normalize_romaji.py` to regenerate display romaji in the third item of each chapter JSON and `all.json`. The script also updates chapter checksums.
 
-Display romaji uses macrons for long vowels (`みょう` → `myō`, `ほう` → `hō`). A final small `ッ`/`っ` contributes the initial consonant of the following character: `こッ`/`しゅー` → `kos`/`shū`, `せッ`/`ぽう` → `sep`/`pō`. Before `sh` it contributes `s`; before `ch` or `ts` it contributes `t`. The original kana and legacy romaji remain available in `text`. The sole unresolved value is 普賢品 index 1014, `薩` (`さッ`), because the next reading, `うー`, begins with a vowel; its display romaji is an empty string.
+Display romaji uses macrons for long vowels (`みょう` → `myō`, `ほう` → `hō`). A final small `ッ`/`っ` contributes the initial consonant of the following character: `こッ`/`しゅー` → `kos`/`shū`, `せッ`/`ぽう` → `sep`/`pō`. Before `sh` it contributes `s`; before `ch` or `ts` it contributes `t`. 普賢品 index 1014, `薩`, has the corrected kana `さつ` and romaji `satsu`.
 
 `source` records provenance and a checksum (SHA-256, truncated) computed over that chapter's `text` array — it changes if and only if the kanji/ruby/romaji content changes, independent of formatting or metadata edits. Useful for verifying you have an unmodified copy of a given version.
 

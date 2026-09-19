@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate display romaji without altering the legacy three-item text tuples."""
+"""Regenerate normalized romaji in all chapter JSON files and all.json."""
 
 import hashlib
 import json
@@ -24,7 +24,6 @@ BASE = {
 }
 YOON = {"し": "sh", "ち": "ch", "じ": "j"}
 MACRON = {"a": "ā", "i": "ī", "u": "ū", "e": "ē", "o": "ō"}
-HEADERS = ("文字位置", "漢字", "かなルビ", "ローマ字ルビ")
 
 
 def romanize(kana):
@@ -72,44 +71,42 @@ def romanize_cell(kana, next_kana):
 
 
 
+def write_json(path, value):
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
 def main():
     root = Path(__file__).resolve().parents[1]
     source = root / "data/all.json"
-    raw = source.read_bytes()
-    chapters = json.loads(raw)
-    if len(chapters) != 12 or sum(len(c["text"]) for c in chapters) != 13852:
-        raise ValueError("Expected 12 chapters and 13,852 characters")
-    result = {
-        "schema_version": 1,
-        "source_file": "data/all.json",
-        "source_sha256": hashlib.sha256(raw).hexdigest(),
-        "chapters": [],
-    }
-    unresolved = []
-    for chapter in chapters:
-        readings = []
+    chapters = json.loads(source.read_text(encoding="utf-8"))
+    files = sorted((root / "data").glob("[0-9][0-9]_*.json"))
+    if len(chapters) != 12 or len(files) != 12:
+        raise ValueError("Expected 12 chapters")
+    if sum(len(c["text"]) for c in chapters) != 13852:
+        raise ValueError("Expected 13,852 characters")
+    for chapter, path in zip(chapters, files, strict=True):
+        individual = json.loads(path.read_text(encoding="utf-8"))
+        if individual != chapter:
+            raise ValueError(f"Chapter mismatch: {path}")
         for index, item in enumerate(chapter["text"]):
             if len(item) != 3:
-                raise ValueError(f"Unexpected text entry: {chapter['name']} {index}")
+                raise ValueError(f"Unexpected entry: {chapter['name']} {index}")
+            if chapter["name"] == "普賢品" and index == 1014:
+                if item[0] != "薩" or item[1] not in ("さッ", "さつ"):
+                    raise ValueError("Unexpected 普賢品 index 1014")
+                item[1] = "さつ"
             next_kana = chapter["text"][index + 1][1] if index + 1 < len(chapter["text"]) else None
-            value = romanize_cell(item[1], next_kana)
-            if not value:
-                unresolved.append((chapter["name"], index, item[0], item[1]))
-            readings.append(value)
-        result["chapters"].append({
-            "name": chapter["name"],
-            "source_checksum": chapter["source"]["checksum"],
-            "romaji": readings,
-        })
-    if unresolved != [("普賢品", 1014, "薩", "さッ")]:
-        raise ValueError(f"Unexpected unresolved readings: {unresolved}")
-    target = root / "data/romaji_display.json"
-    target.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    check = json.loads(target.read_text(encoding="utf-8"))
-    for original, addition in zip(chapters, check["chapters"], strict=True):
-        if original["name"] != addition["name"] or len(original["text"]) != len(addition["romaji"]):
-            raise AssertionError("Chapter or row count mismatch")
-    print(f"Generated {target}: 12 chapters, 13,852 readings, {len(unresolved)} unresolved")
+            item[2] = romanize_cell(item[1], next_kana)
+            if not item[2]:
+                raise ValueError(f"Unresolved romaji: {chapter['name']} {index}")
+        chapter["note"] = "Readings follow Nichiren sect goon (呉音) pronunciation. Display romaji uses macrons for long vowels and context-aware consonants for small tsu; corrections are welcome via GitHub Issues."
+        chapter["source"]["version"] = "v1.1.4"
+        chapter["source"]["checksum"] = hashlib.sha256(
+            json.dumps(chapter["text"], ensure_ascii=False).encode("utf-8")
+        ).hexdigest()[:16]
+        write_json(path, chapter)
+    write_json(source, chapters)
+    print("Updated 12 chapters and all.json: 13,852 complete readings")
 
 
 if __name__ == "__main__":

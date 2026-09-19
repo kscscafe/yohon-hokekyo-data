@@ -54,6 +54,12 @@ Each JSON file follows this structure:
 
 `text` is an array of `[kanji, ruby, romaji]` triplets. The ruby represents the *goon* (呉音) pronunciation used in Nichiren sect recitation, which differs from standard modern Japanese readings. Romaji is generated automatically via [pykakasi](https://github.com/miurahr/pykakasi) (Hepburn) and may not perfectly reflect the chanting pronunciation.
 
+### Display romaji
+
+`data/romaji_display.json` provides a reading-oriented romaji value for each character without changing the legacy `text` triplets. Match `chapters[].name` to a chapter in `all.json`, then use the same zero-based index in `chapters[].romaji` and `text`. Check `source_sha256` and each chapter's `source_checksum` before pairing the files. Run `python3 scripts/generate_romaji_display.py` to regenerate this file from `data/all.json`.
+
+Display romaji uses macrons for long vowels (`みょう` → `myō`, `ほう` → `hō`). A final small `ッ`/`っ` contributes the initial consonant of the following character: `こッ`/`しゅー` → `kos`/`shū`, `せッ`/`ぽう` → `sep`/`pō`. Before `sh` it contributes `s`; before `ch` or `ts` it contributes `t`. The original kana and legacy romaji remain available in `text`. The sole unresolved value is 普賢品 index 1014, `薩` (`さッ`), because the next reading, `うー`, begins with a vowel; its display romaji is an empty string.
+
 `source` records provenance and a checksum (SHA-256, truncated) computed over that chapter's `text` array — it changes if and only if the kanji/ruby/romaji content changes, independent of formatting or metadata edits. Useful for verifying you have an unmodified copy of a given version.
 
 ---

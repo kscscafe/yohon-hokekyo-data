@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+### Added
+- Add `data/romaji_display.json` with macrons and context-based small-tsu readings, plus a reproducible generator. Keep legacy `text` triplets unchanged for compatibility.
+
 ## [1.1.3] - 2026-07-05
 
 ### Added

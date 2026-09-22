@@ -100,7 +100,7 @@ def main():
             if not item[2]:
                 raise ValueError(f"Unresolved romaji: {chapter['name']} {index}")
         chapter["note"] = "Readings follow Nichiren sect goon (呉音) pronunciation. Display romaji uses macrons for long vowels and context-aware consonants for small tsu; corrections are welcome via GitHub Issues."
-        chapter["source"]["version"] = "v1.1.6-dev"
+        chapter["source"]["version"] = "v1.1.6"
         chapter["source"]["checksum"] = hashlib.sha256(
             json.dumps(chapter["text"], ensure_ascii=False).encode("utf-8")
         ).hexdigest()[:16]

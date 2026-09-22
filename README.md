@@ -39,7 +39,7 @@ Each JSON file follows this structure:
     "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
     "copyright": "© Koryu Sugizaki",
     "license": "CC BY-NC-SA 4.0",
-    "version": "v1.1.5",
+    "version": "v1.1.6",
     "checksum": "e2311122ac0c1a06"
   },
   "text": [

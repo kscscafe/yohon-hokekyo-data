@@ -2383,7 +2383,7 @@
     "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
     "copyright": "© Koryu Sugizaki",
     "license": "CC BY-NC-SA 4.0",
-    "version": "v1.1.6-dev",
+    "version": "v1.1.6",
     "checksum": "d431037c58e6a0fc"
   }
 }

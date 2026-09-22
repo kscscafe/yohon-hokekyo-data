@@ -861,8 +861,8 @@
       ],
       [
         "波",
-        "だい",
-        "dai"
+        "はー",
+        "hā"
       ],
       [
         "提",
@@ -3574,8 +3574,8 @@
       "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
       "copyright": "© Koryu Sugizaki",
       "license": "CC BY-NC-SA 4.0",
-      "version": "v1.1.5",
-      "checksum": "9f05eef3c3ebe1b0"
+      "version": "v1.1.6-dev",
+      "checksum": "83208d124980958a"
     }
   },
   {
@@ -5098,7 +5098,7 @@
       "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
       "copyright": "© Koryu Sugizaki",
       "license": "CC BY-NC-SA 4.0",
-      "version": "v1.1.5",
+      "version": "v1.1.6-dev",
       "checksum": "cd2162d9fddf1800"
     }
   },
@@ -6442,7 +6442,7 @@
       "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
       "copyright": "© Koryu Sugizaki",
       "license": "CC BY-NC-SA 4.0",
-      "version": "v1.1.5",
+      "version": "v1.1.6-dev",
       "checksum": "384971238d9c880e"
     }
   },
@@ -15221,7 +15221,7 @@
       "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
       "copyright": "© Koryu Sugizaki",
       "license": "CC BY-NC-SA 4.0",
-      "version": "v1.1.5",
+      "version": "v1.1.6-dev",
       "checksum": "37b0691f21121daa"
     }
   },
@@ -17290,7 +17290,7 @@
       "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
       "copyright": "© Koryu Sugizaki",
       "license": "CC BY-NC-SA 4.0",
-      "version": "v1.1.5",
+      "version": "v1.1.6-dev",
       "checksum": "cd03e70bd31bb5f3"
     }
   },
@@ -27464,7 +27464,7 @@
       "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
       "copyright": "© Koryu Sugizaki",
       "license": "CC BY-NC-SA 4.0",
-      "version": "v1.1.5",
+      "version": "v1.1.6-dev",
       "checksum": "e2311122ac0c1a06"
     }
   },
@@ -33168,7 +33168,7 @@
       "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
       "copyright": "© Koryu Sugizaki",
       "license": "CC BY-NC-SA 4.0",
-      "version": "v1.1.5",
+      "version": "v1.1.6-dev",
       "checksum": "42872749bb43955d"
     }
   },
@@ -33299,8 +33299,8 @@
       ],
       [
         "大",
-        "ざい",
-        "zai"
+        "だい",
+        "dai"
       ],
       [
         "神",
@@ -35557,8 +35557,8 @@
       "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
       "copyright": "© Koryu Sugizaki",
       "license": "CC BY-NC-SA 4.0",
-      "version": "v1.1.5",
-      "checksum": "c75e595ae72ac786"
+      "version": "v1.1.6-dev",
+      "checksum": "d431037c58e6a0fc"
     }
   },
   {
@@ -45966,7 +45966,7 @@
       "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
       "copyright": "© Koryu Sugizaki",
       "license": "CC BY-NC-SA 4.0",
-      "version": "v1.1.5",
+      "version": "v1.1.6-dev",
       "checksum": "7559ba0ddc216c02"
     }
   },
@@ -52180,7 +52180,7 @@
       "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
       "copyright": "© Koryu Sugizaki",
       "license": "CC BY-NC-SA 4.0",
-      "version": "v1.1.5",
+      "version": "v1.1.6-dev",
       "checksum": "38078ed940624a1d"
     }
   },
@@ -58111,8 +58111,8 @@
       ],
       [
         "已",
-        "ぜー",
-        "zē"
+        "いー",
+        "ī"
       ],
       [
         "後",
@@ -60849,8 +60849,8 @@
       "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
       "copyright": "© Koryu Sugizaki",
       "license": "CC BY-NC-SA 4.0",
-      "version": "v1.1.5",
-      "checksum": "b139e046ece3b4ea"
+      "version": "v1.1.6-dev",
+      "checksum": "1bde4955fca5b8f5"
     }
   },
   {
@@ -65160,8 +65160,8 @@
       ],
       [
         "賢",
-        "けん",
-        "ken"
+        "げん",
+        "gen"
       ],
       [
         "威",
@@ -69423,8 +69423,8 @@
       "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
       "copyright": "© Koryu Sugizaki",
       "license": "CC BY-NC-SA 4.0",
-      "version": "v1.1.5",
-      "checksum": "50298a9c1491765b"
+      "version": "v1.1.6-dev",
+      "checksum": "8ff402820ceebb41"
     }
   }
 ]

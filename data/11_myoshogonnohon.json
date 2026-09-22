@@ -5925,8 +5925,8 @@
     ],
     [
       "已",
-      "ぜー",
-      "zē"
+      "いー",
+      "ī"
     ],
     [
       "後",
@@ -8663,7 +8663,7 @@
     "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
     "copyright": "© Koryu Sugizaki",
     "license": "CC BY-NC-SA 4.0",
-    "version": "v1.1.5",
-    "checksum": "b139e046ece3b4ea"
+    "version": "v1.1.6-dev",
+    "checksum": "1bde4955fca5b8f5"
   }
 }

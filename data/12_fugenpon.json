@@ -4305,8 +4305,8 @@
     ],
     [
       "賢",
-      "けん",
-      "ken"
+      "げん",
+      "gen"
     ],
     [
       "威",
@@ -8568,7 +8568,7 @@
     "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
     "copyright": "© Koryu Sugizaki",
     "license": "CC BY-NC-SA 4.0",
-    "version": "v1.1.5",
-    "checksum": "50298a9c1491765b"
+    "version": "v1.1.6-dev",
+    "checksum": "8ff402820ceebb41"
   }
 }

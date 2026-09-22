@@ -860,8 +860,8 @@
     ],
     [
       "波",
-      "だい",
-      "dai"
+      "はー",
+      "hā"
     ],
     [
       "提",
@@ -3573,7 +3573,7 @@
     "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
     "copyright": "© Koryu Sugizaki",
     "license": "CC BY-NC-SA 4.0",
-    "version": "v1.1.5",
-    "checksum": "9f05eef3c3ebe1b0"
+    "version": "v1.1.6-dev",
+    "checksum": "83208d124980958a"
   }
 }

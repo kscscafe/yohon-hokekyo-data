@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.6-dev] - Unreleased
+
+### Fixed
+- User-confirmed readings (2026-09-22, zero-based indices): 序品 171 波 → はー / hā; 属累品 24 大 → だい / dai; 妙荘厳王品 1184 已 → いー / ī; 普賢品 860 賢 → げん / gen.
+- Kanji and source positions remain unchanged. Update affected chapter checksums.
+
 ## [1.1.5] - 2026-09-20
 
 ### Fixed

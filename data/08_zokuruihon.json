@@ -125,8 +125,8 @@
     ],
     [
       "大",
-      "ざい",
-      "zai"
+      "だい",
+      "dai"
     ],
     [
       "神",
@@ -2383,7 +2383,7 @@
     "repo": "https://github.com/kscscafe/yohon-hokekyo-data",
     "copyright": "© Koryu Sugizaki",
     "license": "CC BY-NC-SA 4.0",
-    "version": "v1.1.5",
-    "checksum": "c75e595ae72ac786"
+    "version": "v1.1.6-dev",
+    "checksum": "d431037c58e6a0fc"
   }
 }

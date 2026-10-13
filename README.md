@@ -4,6 +4,8 @@ Structured ruby (furigana) text data for the **Yohon** (要品), the essential c
 
 Each character is paired with its pronunciation reading (呉音 *goon*), the traditional Buddhist reading used in Nichiren sect chanting.
 
+[日本語版 README](README.ja.md)
+
 ---
 
 ## Contents
